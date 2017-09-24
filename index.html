@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+    }
+
+    #progress-meter .background {
+      fill: rgba(255,255,255,0.05);
+    }
+
+    #progress-meter .restArc {
+      fill: #033;
+    }
+
+    #progress-meter .workArc {
+      fill: #303;
+    }
+
+    #progress-meter .playArc {
+      fill: #330;
+    }
+
+    #progress-meter .foreground {
+      fill: white;
+    }
+
+    #progress-meter text {
+      font-size: 48px;
+      font-weight: bold;
+      fill: #ccc;
+    }
+    </style>
+  </head>
+  <body>
+    <div id='container'>
+      <div id="clock">
+      </div>
+    </div>
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="node_modules/d3/build/d3.js"></script>
+    <script src="node_modules/d3-shape/build/d3-shape.js"></script>
+    <script src="node_modules/d3-path/build/d3-path.js"></script>
+    <script src="node_modules/d3-time/build/d3-time.js"></script>
+    <script src="node_modules/d3-request/build/d3-request.js"></script>
+    <script src="clock.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
